@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack --mode=production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "node my-agora-states-server/app.js",
     "dev": "nodemon my-agora-states-server/app.js",
     "test": "jest"
